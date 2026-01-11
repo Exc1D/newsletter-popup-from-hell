@@ -1,9 +1,9 @@
 const popup = document.getElementById("popup");
-const closeBtn = document.getElementById("close-btn");
-const newsletterForm = document.getElementById("newsletter-form");
-const modalInner = document.getElementById("modal-inner");
-const declineBtn = document.getElementById("decline-btn");
-const buttonContainer = document.getElementById("button-container");
+const closeBtn = document.getElementById("closeBtn");
+const newsletterForm = document.getElementById("newsletterForm");
+const modalInner = document.getElementById("modalInner");
+const declineBtn = document.getElementById("declineBtn");
+const buttonContainer = document.getElementById("buttonContainer");
 
 // TODO: Show the popup after 2 seconds (2000ms)
 
