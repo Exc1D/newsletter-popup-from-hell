@@ -5,24 +5,24 @@ const modalInner = document.getElementById("modalInner");
 const declineBtn = document.getElementById("declineBtn");
 const buttonContainer = document.getElementById("buttonContainer");
 
-// TODO: Show the popup after 2 seconds (2000ms)
+//  Show the popup after 2 seconds (2000ms)
 setTimeout(() => {
   popup.style.display = "flex";
 }, 2000);
 
-// TODO: Add click event to close button to hide the popup
+//  Add click event to close button to hide the popup
 closeBtn.addEventListener("click", () => {
   popup.style.display = "none";
 });
 
-// TODO: Add mouseenter event to decline button
+//  Add mouseenter event to decline button
 declineBtn.addEventListener("mouseenter", () => {
   // When hovering over decline button, toggle a class on buttonContainer
   // that reverses the button order (you'll need to create this class in CSS)
   buttonContainer.classList.toggle("reverse-row");
 });
 
-// TODO: Add submit event to the form
+//  Add submit event to the form
 newsletterForm.addEventListener("submit", function (e) {
   // 1. Prevent default form submission
   e.preventDefault();
@@ -43,7 +43,7 @@ newsletterForm.addEventListener("submit", function (e) {
     modalInner.innerHTML = `
       <div class="loading-screen">
          <div class="loading-spinner"></div>
-         <p>Haha selling your data to the Dark Web...</p>
+         <p>Just kiddinng! Selling your data to the Dark Web...</p>
       </div>
       `;
   }, 1500);
@@ -55,7 +55,7 @@ newsletterForm.addEventListener("submit", function (e) {
          <img class="success-gif" src="pirate.gif"/>
          <p>Purchase Successul! Thanks <span class="success-name">${name}</span>, you sucker!</p>
       </div>`;
-  }, 4000);
+  }, 5000);
   closeBtn.disabled = false;
 });
 
@@ -82,4 +82,4 @@ newsletterForm.addEventListener("submit", function (e) {
            - Enable the close button
         
         BONUS: Add your own creative touches to the success message!
-        */
+*/
