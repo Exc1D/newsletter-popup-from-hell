@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Newsletter Popup Exercise</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="main-content">
+      <h1>🚀 Master Web Development in 2026!</h1>
+      <p>
+        Join thousands of developers learning the latest technologies and
+        landing their dream jobs!
+      </p>
+
+      <ul class="feature-list">
+        <li class="feature-item feature-purple">
+          💎 Exclusive coding tutorials
+        </li>
+        <li class="feature-item feature-blue">
+          🎯 Career guidance from experts
+        </li>
+        <li class="feature-item feature-green">🔥 Weekly coding challenges</li>
+        <li class="feature-item feature-orange">
+          🎁 Free resources and ebooks
+        </li>
+      </ul>
+
+      <p>
+        Subscribe to our newsletter and get instant access to premium content
+        that will accelerate your coding journey!
+      </p>
+    </div>
+
+    <div class="popup-modal" id="popup">
+      <div class="modal-content">
+        <button class="close-btn" id="close-btn" disabled>×</button>
+        <div id="modal-inner">
+          <h2>🎉 Special Offer!</h2>
+          <p class="modal-text">
+            Don't miss out! Subscribe to our newsletter and get exclusive access
+            to premium coding tutorials, job interview tips, and weekly
+            challenges. Enter your details below!
+          </p>
+          <form id="newsletter-form">
+            <input
+              type="text"
+              name="firstName"
+              placeholder="First Name"
+              required
+            />
+            <input
+              type="email"
+              name="email"
+              placeholder="Email Address"
+              required
+            />
+            <div class="button-container" id="button-container">
+              <button type="submit" class="btn btn-submit">
+                Subscribe Now!
+              </button>
+              <button type="button" class="btn btn-decline" id="decline-btn">
+                No Thanks
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
