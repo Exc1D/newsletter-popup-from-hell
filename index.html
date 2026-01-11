@@ -12,25 +12,50 @@
   </head>
   <body>
     <main class="main-content">
-      <h1>🚀 Master Web Development in 2026!</h1>
+      <h1>Master Web Development in 2026!</h1>
       <p>
         Join thousands of developers learning the latest technologies and
         landing their dream jobs!
       </p>
       <ul class="feature-list">
-        <li class="feature-item feature-purple">
-          💎 Exclusive coding tutorials
-        </li>
-        <li class="feature-item feature-blue">
-          🎯 Career guidance from experts
-        </li>
-        <li class="feature-item feature-green">🔥 Weekly coding challenges</li>
-        <li class="feature-item feature-orange">
-          🎁 Free resources and ebooks
-        </li>
+        <li class="feature-item feature-purple">Exclusive coding tutorials</li>
+        <li class="feature-item feature-blue">Career guidance from experts</li>
+        <li class="feature-item feature-green">Weekly coding challenges</li>
+        <li class="feature-item feature-orange">Free resources and ebooks</li>
       </ul>
+      <p>
+        Subscribe to our newsletter and get instant access to premium content
+        that will accelerate your coding journey!
+      </p>
     </main>
-    <div></div>
+
+    <div class="popup-modal" id="popup">
+      <div class="modal-content">
+        <button class="close-btn" id="closeBtn" disabled>X</button>
+      </div>
+      <div class="modal-inner">
+        <h2>Special Offer!</h2>
+        <p>
+          Don't miss out! Subscribe to our newsletter and get exclusive access
+          to premium coding tutorials, job interview tips, and weekly
+          challenges. Enter your details below!
+        </p>
+        <form id="newsletterForm"></form>
+        <input type="text" name="firstName" placeholder="John" required />
+        <input
+          type="email"
+          name="email"
+          placeholder="sample@example.com"
+          required
+        />
+        <dv class="button-container" id="buttonContainer">
+          <button type="submit" class="btn btn-submit">Subscribe Now!</button>
+          <button type="button" class="btn btn-decline" id="declineBtn">
+            No Thanks
+          </button>
+        </dv>
+      </div>
+    </div>
     <script src="script.js"></script>
   </body>
 </html>
