@@ -92,7 +92,7 @@ h1 {
 }
 
 .close-btn:hover {
-  color: #ffeb3b;
+  color: #ff4242;
 }
 
 .close-btn:disabled {
@@ -128,6 +128,9 @@ input {
 }
 
 /* TODO: Add a class here for reversing button order */
+.reverse-row {
+  flex-direction: row-reverse;
+}
 
 .btn {
   padding: 12px 30px;
@@ -154,8 +157,10 @@ input {
   color: white;
 }
 
-.loading-screen {
+.loading-screen,
+.success-screen {
   text-align: center;
+  color: rgb(123, 123, 123);
 }
 
 .loading-spinner {
@@ -175,7 +180,7 @@ input {
 }
 
 .success-name {
-  color: #ffeb3b;
+  color: fuchsia;
   font-weight: bold;
 }
 
