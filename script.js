@@ -7,6 +7,10 @@ const buttonContainer = document.getElementById("buttonContainer");
 
 // TODO: Show the popup after 2 seconds (2000ms)
 
+setTimeout(() => {
+  popup.style.display = "flex";
+}, 2000);
+
 // TODO: Add click event to close button to hide the popup
 
 // TODO: Add mouseenter event to decline button
